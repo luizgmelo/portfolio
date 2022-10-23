@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfólio de Guilherme</title>
+    <style>
+        
+        * {
+            margin: 0px;
+            padding: 0;
+            font: arial;
+        }
+
+        hr {
+            position: relative;
+            top: 10px;
+        }
+
+        .div-main {
+            margin: 10px;
+            display: flex;
+            gap: 10px;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .conteudo {
+            position: relative;
+            top: 40px;
+        }
+
+        .titulo {
+            display: flex;
+            justify-content: center;
+        }
+
+        .resumo {
+            margin: 10px;
+            width: 500px;
+            height: 200px;
+            text-align: justify;
+        }
+
+
+        .foto-perfil {
+            margin: 10px;
+            align-items: flex-end;
+            width: 300px;
+            height: 300px;
+            border-radius: 40px;
+        }
+
+        .secao-tecnologia-contato {
+            margin: 30px 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+        .div-tecnologia {
+            width: 400px;
+            height: 150px;
+        }
+
+        .tecnologia-titulo {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+  
+        .tecnologia-logo {
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            margin: 30px;
+        }
+
+        .div-contato {
+            width: 400px;
+            height: 150px;
+
+        }
+
+        .contato-titulo {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        .contato-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .gato-gif {
+            position: relative;
+            left: 250px;
+        }
+
+        
+        .div-projetos {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            gap: 15px;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>  
+    <div class="div-main">
+        <main class="conteudo">
+                <h1 class="titulo">Olá, meu nome é Guilherme</h1>
+                <p class="resumo">
+                    Atualmente tenho 18 anos, sou um iniciante na área de tecnologia, mas sou um entusiasta da área de
+                    programação atualmente estudando tecnologias como: Python, HTML e CSS, com o pensamento voltado 
+                    para o desenvolvimento Web espero dentro da área ser um ótimo profissional e ajudar as pessoas
+                    tanto como conhecimento como soluções tecnológicas. 
+                </p>
+        </main>
+        <img class="foto-perfil" src="./img/me.jpeg" alt="me">
+    </div>
+
+    <hr>
+
+    <section class="secao-tecnologia-contato">
+
+        <div class="div-tecnologia">
+            <h1 class="tecnologia-titulo">Tecnologias</h1>
+                <div class="tecnologia-logo">
+                    <img align="center" alt="python" class="python-logo" height="80" width="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" / style="max-width: 100%;">
+                    <img align="center" alt="html5" class="html5-logo" height="80" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" / style="max-width: 100%;">
+                    <img align="center" alt="css3" class="css3-logo" height="80" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" / style="max-width: 100%;">
+                </div>    
+        </div>
+
+        <div class="div-contato">
+                <h1 class="contato-titulo">Contatos</h1>
+                <div class="contato-logo">
+                    <a href="https://discord.gg/fAGCKMw4sH" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a> 
+                    <a href="https://instagram.com/luizgmelo_" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+                    <a href = "mailto:luizgmelo_@hotmail.com"><img src="https://img.shields.io/badge/-Email-%23333?style=for-the-badge&logo=Gmail&logoColor=white" target="_blank"></a>       
+                </div>
+        </div>
+
+        <div class="gato-gif">
+            <img align="center" alt="cat-gif" height="80" widht="80" src="img/cat.gif" style="max-width: 100%;">
+        </div>
+
+    </section>
+    
+
+    <hr>
+
+    <div class="div-projetos">
+        <h1 class="projetos-titulo"> Meus Projetos</h1>
+        <p>Por enquanto não há nada aqui... volte mais tarde !</p>
+        <img src="img/cat-sleep.gif" alt="cat-sleep-git" height="145" width="250" style="max-width: 100%;">
+    </div>
+
+    <hr>
+
+</body>
+</html>

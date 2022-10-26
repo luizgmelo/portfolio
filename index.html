@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfólio de Guilherme</title>
     <style>
@@ -21,8 +22,7 @@
         .div-main {
             margin: 10px;
             display: flex;
-            gap: 10px;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;
             width: 100%;
             height: 100%;
@@ -39,19 +39,18 @@
         }
 
         .resumo {
+            font-family: 'arial', 'sans-serif';
+            font-size: 1.3em;
             margin: 10px;
-            width: 500px;
+            width: 600px;
             height: 200px;
             text-align: justify;
         }
 
-
         .foto-perfil {
             margin: 10px;
-            align-items: flex-end;
             width: 300px;
             height: 300px;
-            border-radius: 40px;
         }
 
         .secao-tecnologia-contato {
@@ -60,7 +59,6 @@
             justify-content: space-evenly;
             align-items: center;
         }
-
 
         .div-tecnologia {
             width: 400px;
@@ -80,6 +78,11 @@
             margin: 30px;
         }
 
+        .tecnologia-logo img {
+            height: 80px;
+            max-width: 100%;
+        }
+
         .div-contato {
             width: 400px;
             height: 150px;
@@ -90,11 +93,13 @@
             display: flex;
             justify-content: center;
             margin: 10px;
+            margin-bottom: 50px;
         }
 
         .contato-logo {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: center;
             align-items: center;
             gap: 10px;
         }
@@ -104,7 +109,11 @@
             left: 250px;
         }
 
-        
+        .gato-gif img {
+            height: 80px;
+            max-width: 100%;
+        }
+
         .div-projetos {
             display: flex;
             justify-content: center;
@@ -114,7 +123,11 @@
             gap: 15px;
         }
 
-        
+        .div-projetos img {
+            height: 145px;
+            width: 250px;
+            max-width: 100%;
+        }
 
     </style>
 </head>
@@ -130,7 +143,7 @@
                     tanto como conhecimento como soluções tecnológicas. 
                 </p>
         </main>
-        <img class="foto-perfil" src="./img/me.jpeg" alt="me">
+        <img class="foto-perfil" src="./img/me.png" alt="foto-minha">
     </div>
 
     <hr>
@@ -140,23 +153,25 @@
         <div class="div-tecnologia">
             <h1 class="tecnologia-titulo">Tecnologias</h1>
                 <div class="tecnologia-logo">
-                    <img align="center" alt="python" class="python-logo" height="80" width="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" / style="max-width: 100%;">
-                    <img align="center" alt="html5" class="html5-logo" height="80" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" / style="max-width: 100%;">
-                    <img align="center" alt="css3" class="css3-logo" height="80" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" / style="max-width: 100%;">
+                    <img class="python-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python">
+                    <img class="html5-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html5">
+                    <img class="css3-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css3">
                 </div>    
         </div>
 
         <div class="div-contato">
-                <h1 class="contato-titulo">Contatos</h1>
-                <div class="contato-logo">
-                    <a href="https://discord.gg/fAGCKMw4sH" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a> 
-                    <a href="https://instagram.com/luizgmelo_" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-                    <a href = "mailto:luizgmelo_@hotmail.com"><img src="https://img.shields.io/badge/-Email-%23333?style=for-the-badge&logo=Gmail&logoColor=white" target="_blank"></a>       
-                </div>
+            <h1 class="contato-titulo">Contatos</h1>
+            <div class="contato-logo">
+                <a href="https://discord.gg/fAGCKMw4sH" target="_blank" rel="external"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="discord"></a> 
+                <a href="https://instagram.com/luizgmelo_" target="_blank" rel="external"><img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/luiz-guilherme-78905323a/" target="_blank" rel="external"><img src="https://img.shields.io/badge/LINKEDIN-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"></a>
+                <a href="https://www.github.com/luizgmelo" target="_blank" rel="external"><img src="https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white" alt="github"></a>
+                <a href="https://twitter.com/luizgmelo_" target="_blank" rel="external"><img src="https://img.shields.io/badge/TWITTER-00BFFF?style=for-the-badge&logo=twitter&logoColor=white" alt="twitter"></a>
+            </div>
         </div>
 
         <div class="gato-gif">
-            <img align="center" alt="cat-gif" height="80" widht="80" src="img/cat.gif" style="max-width: 100%;">
+            <img src="img/cat.gif" alt="gato-gif">
         </div>
 
     </section>
@@ -167,7 +182,7 @@
     <div class="div-projetos">
         <h1 class="projetos-titulo"> Meus Projetos</h1>
         <p>Por enquanto não há nada aqui... volte mais tarde !</p>
-        <img src="img/cat-sleep.gif" alt="cat-sleep-git" height="145" width="250" style="max-width: 100%;">
+        <img src="img/cat-sleep.gif" alt="gato-dormindo-gif">
     </div>
 
     <hr>

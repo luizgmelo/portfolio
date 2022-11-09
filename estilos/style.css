@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor0: #5158FD;
+    --cor1: #4977E3;
+    --cor2: #5CB6FA;
+    --cor3: #49C9E3;
+    --cor4: #51FDEC; 
+
+    --fonte-destaque: 'Bebas Neue', cursive, sans-serif;
+}
+
+.destaque {
+    font-family: var(--fonte-destaque);
+    font-size: 4em;
+    text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.3);      
+    padding: 10px 10px;      
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    background-attachment: fixed;
+}
+
+
+main {
+    background-color: white;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+main h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    padding: 5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.div-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resumo {
+    font-family: 'arial', 'sans-serif';
+    font-size: 1.3em;
+    margin: 10px;
+    min-width: 200px;
+    max-width: 600px;
+    text-align: justify;
+    text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+.foto-perfil {
+    margin: 20px;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.secao-tecnologia-contato {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.div-tecnologia {
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.tecnologia-logo {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px 30px;
+}
+
+.tecnologia-logo img {
+    min-width: 60px;
+    max-width: 150px;
+    height: 80px;
+
+}
+
+.div-contato {
+    min-width: 160px;
+    max-width: 400px;
+    min-height: 100px;
+}
+
+.contato-logo {
+    display: inline-block;
+    background-color: white;
+    padding: 5px;
+}
+
+.contato-logo > a {
+    padding: 5px;
+}
+
+.contato-logo > a:hover {
+    opacity: 50%;
+
+}
+
+.div-projetos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.div-projetos > p {
+    font-size: 1.3em;
+    text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.div-projetos img {
+    height: 145px;
+    width: 250px;
+    max-width: 100%;
+}
+
+footer {
+    background-color: var(--cor4);
+    width: 100%;
+    text-align: center;
+}
+
+footer > p {
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+footer a {
+    background-color: var(--cor0);
+    opacity: 90%;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: var(--cor2);
+}

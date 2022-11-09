@@ -2,230 +2,25 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfólio de Guilherme</title>
-    <style>
-        
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-        :root {
-            --cor0: #5158FD;
-            --cor1: #4977E3;
-            --cor2: #5CB6FA;
-            --cor3: #49C9E3;
-            --cor4: #51FDEC; 
-
-            --fonte-destaque: 'Bebas Neue', cursive, sans-serif;
-        }
-
-        .destaque {
-            font-family: var(--fonte-destaque);
-            font-size: 4em;
-            text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.3);
-            padding: 10px;
-            
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            font: arial;
-        }
-
-        header {
-            color: white;
-            text-align: center;
-        }
-
-        body {
-            background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
-            background-attachment: fixed;
-        }
-
-
-        main {
-            background-color: white;
-            padding-right: 20px;
-            padding-bottom: 20px;
-            min-width: 500px;
-            max-width: 1000px;
-            margin: auto;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
- 
-        /* div, section {
-            background-color: aqua;
-        }  */
-
-        main > h1 {
-            color: var(--cor3);
-        }
-
-        h2 {
-            font-family: var(--fonte-destaque);
-            font-size: 2em;
-            padding: 5px;
-            border-radius: 15px;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        .div-main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .titulo {
-            display: flex;
-            justify-content: center;
-        }
-
-        .resumo {
-            font-family: 'arial', 'sans-serif';
-            font-size: 1.3em;
-            margin: 10px;
-            min-width: 400px;
-            max-width: 600px;
-            text-align: justify;
-            text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        .foto-perfil {
-            margin: 20px;
-            min-width: 200px;
-            min-height: 200px;
-            max-width: 250px;
-            max-height: 250px;
-        }
-
-        .secao-tecnologia-contato {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
-        .div-tecnologia {
-            min-width: 200px;
-            max-width: 400px;
-        }
-
-        .tecnologia-titulo {
-            display: flex;
-            justify-content: center;
-        }
-  
-        .tecnologia-logo {
-            display: flex;
-            background-color: white;
-            justify-content: center;
-            padding: 10px;
-            margin: 10px 30px;
-        }
-
-        .tecnologia-logo img {
-            min-width: 70px;
-            max-width: 150px;
-            height: 80px;
-        }
-
-        .div-contato {
-            min-width: 300px;
-            max-width: 400px;
-        }
-
-        .contato-titulo {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 10px;
-        }
-
-        .contato-logo {
-            display: inline-block;
-            background-color: white;
-            padding: 5px;
-            padding-left: 20px;
-        }
-
-        .contato-logo > a {
-            padding: 5px;
-        }
-
-        .contato-logo > a:last-child {
-            position: relative;
-            left: 10px;
-        }
-
-        .contato-logo > a:hover {
-            opacity: 50%;
-
-        }
-
-        .div-projetos {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .div-projetos > p {
-            font-size: 1.3em;
-            text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
-            padding: 10px;
-        }
-
-        .div-projetos img {
-            height: 145px;
-            width: 250px;
-            max-width: 100%;
-        }
-
-        footer {
-            background-color: var(--cor4);
-            width: 100%;
-            padding: 10px;
-            text-align: center;
-            
-        }
-
-        footer > p {
-            color: white;
-            font-size: 1.2em;
-            padding: 10px;
-        }
-
-        footer > p > a {
-            background-color: var(--cor0);
-            opacity: 90%;
-            padding: 5px;
-            color: white;
-            text-decoration: none;
-        }
-
-    </style>
 </head>
 
 <body>  
-
-    
+  
         <header>
             <h1 class="destaque">Meu Portfólio</h1>
         </header>
 
-
     <main>
         <div class="div-main conteudo">
-            <img class="foto-perfil" src="./img/me.png" alt="foto-minha">
+            <img class="foto-perfil" src="./imagens/me.png" alt="foto-minha">
 
-            <h1 class="titulo destaque">Olá, meu nome é Guilherme</h1>
+            <h1 class="destaque">Olá, meu nome é Guilherme</h1>
             <p class="resumo">
-                Atualmente tenho 18 anos, sou um iniciante na área de tecnologia, mas sou um entusiasta da área de
-                programação atualmente estudando tecnologias como: Python, HTML e CSS, com o pensamento voltado 
-                para o desenvolvimento Web espero dentro da área ser um ótimo profissional e ajudar as pessoas
-                tanto como conhecimento como soluções tecnológicas. 
+                Atualmente tenho 18 anos, sou um aprendiz na área de tecnologia, atualmente estudando tecnologias como: Python, HTML e CSS com o pensamento voltado para o desenvolvimento Web espero dentro da área ser um ótimo profissional e ajudar as pessoas a realizar sonhos com soluções tecnológicas. 
             </p>
         </div>
 
@@ -233,7 +28,7 @@
         <section class="secao-tecnologia-contato">
 
             <div class="div-tecnologia">
-                <h2 class="tecnologia-titulo">Tecnologias</h2>
+                <h2>Tecnologias</h2>
                     <div class="tecnologia-logo">
                         <img class="python-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python">
                         <img class="html5-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html5">
@@ -242,7 +37,7 @@
             </div>
 
             <div class="div-contato">
-                <h2 class="contato-titulo">Contatos</h2>
+                <h2>Contatos</h2>
                 <div class="contato-logo">
                     <a href="https://discord.gg/fAGCKMw4sH" target="_blank" rel="external"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="discord"></a> 
                     <a href="https://instagram.com/luizgmelo_" target="_blank" rel="external"><img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="instagram"></a>
@@ -254,9 +49,9 @@
         </section>
     
         <div class="div-projetos">
-            <h2 class="projetos-titulo"> Meus Projetos</h2>
+            <h2>Meus Projetos</h2>
             <p>Por enquanto não há nada aqui... volte mais tarde !</p>
-            <img src="img/cat-sleep.gif" alt="gato-dormindo-gif">
+            <img src="imagens/cat-sleep.gif" alt="gato-dormindo-gif">
         </div>
     </main>
 

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) { /* TABLETS E TELAS MAIORES*/
+    header > span.material-icons {
+        display: none;
+    }
+
+    header > nav {
+        display: inline-block;
+    }
+
+    header li {
+        display: inline-block;
+        margin-right: 50px;
+    }
+}

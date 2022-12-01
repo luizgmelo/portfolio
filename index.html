@@ -2,55 +2,68 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio de Guilherme</title>
+    <link rel="stylesheet" href="estilos/media-query.css" media="screen">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Portfólio | Luiz Guilherme</title>
 </head>
 
 <body>  
   
-        <header>
-            <h1 class="destaque">Meu Portifólio</h1>
-        </header>
+    <header>
+        <h1>L<span class="last-letter">G</span></h1>
+        <span class="material-icons md-48" onclick="mudarMenu()">menu</span>
+        <nav id="menu">
+            <ul>
+                <a href="#"><li>Início</li></a>
+                <a href="#"><li>Sobre mim</li></a>
+                <a href="#"><li>Tecnologias</li></a>
+                <a href="#"><li>Projetos</li></a>
+                <a href="#"><li>Contatos</li></a>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <div class="div-main conteudo">
             <img class="foto-perfil" src="./imagens/me.png" alt="foto-minha">
 
-            <h1 class="destaque">Olá, meu nome é Guilherme</h1>
+            <h1>Olá, meu nome é Luiz Guilherme</h1>
             <p class="resumo">
-                Atualmente tenho 18 anos, sou um aprendiz na área de tecnologia, atualmente estudando tecnologias como: Python, HTML e CSS com o pensamento voltado para o desenvolvimento Web espero dentro da área ser um ótimo profissional e ajudar as pessoas a realizar sonhos com soluções tecnológicas. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quae, itaque a nemo quaerat culpa! Enim quidem quaerat provident, iure aut facere ex optio ipsa, impedit accusamus unde consectetur doloremque.
             </p>
         </div>
 
+        <div class="div-tecnologia">
+            <h2>Tecnologias</h2>
+                <div class="tecnologia-logo">
+                        <img class="dev-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html">
 
-        <section class="secao-tecnologia-contato">
+                        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html"> 
+                       <p class="resumo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vero nemo quasi eligendi, cumque sunt perspiciatis in atque quam incidunt commodi facere velit fuga itaque iure? Asperiores nemo repudiandae odio?</p>
+                    
+                        <img class="dev-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css">
+                        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"  alt="css">
+                        <p class="resumo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque cumque nobis quis quisquam architecto sapiente qui explicabo, sunt tempora natus dicta necessitatibus optio officiis vitae maxime officia voluptatibus earum voluptatem?</p>
+                </div>    
+        </div>
 
-            <div class="div-tecnologia">
-                <h2>Tecnologias</h2>
-                    <div class="tecnologia-logo">
-                        <img class="python-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python">
-                        <img class="html5-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html5">
-                        <img class="css3-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css3">
-                    </div>    
+        <div class="div-contato">
+            <h2>Contatos</h2>
+            <div class="contato-logo">
+                <a href="https://discord.gg/fAGCKMw4sH" target="_blank" rel="external"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="discord"></a> 
+                <a href="https://instagram.com/luizgmelo_" target="_blank" rel="external"><img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/luiz-guilherme-78905323a/" target="_blank" rel="external"><img src="https://img.shields.io/badge/LINKEDIN-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"></a>
+                <a href="https://www.github.com/luizgmelo" target="_blank" rel="external"><img src="https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white" alt="github"></a>
+                <a href="https://twitter.com/luizgmelo_" target="_blank" rel="external"><img src="https://img.shields.io/badge/TWITTER-00BFFF?style=for-the-badge&logo=twitter&logoColor=white" alt="twitter"></a>
             </div>
+        </div>
 
-            <div class="div-contato">
-                <h2>Contatos</h2>
-                <div class="contato-logo">
-                    <a href="https://discord.gg/fAGCKMw4sH" target="_blank" rel="external"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="discord"></a> 
-                    <a href="https://instagram.com/luizgmelo_" target="_blank" rel="external"><img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="instagram"></a>
-                    <a href="https://www.linkedin.com/in/luiz-guilherme-78905323a/" target="_blank" rel="external"><img src="https://img.shields.io/badge/LINKEDIN-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"></a>
-                    <a href="https://www.github.com/luizgmelo" target="_blank" rel="external"><img src="https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white" alt="github"></a>
-                    <a href="https://twitter.com/luizgmelo_" target="_blank" rel="external"><img src="https://img.shields.io/badge/TWITTER-00BFFF?style=for-the-badge&logo=twitter&logoColor=white" alt="twitter"></a>
-                </div>
-            </div>
-        </section>
-    
+        <h2>Meus Projetos</h2>
         <div class="div-projetos">
-            <h2>Meus Projetos</h2>
-
             <h3>Projeto Social</h3>
             <iframe src="https://luizgmelo.github.io/projeto-social/" referrerpolicy="no-referrer">
                 O seu dispositivo não tem compatibilidade com isso 
@@ -69,5 +82,15 @@
         <p>Desenvolvido por <a href="https://www.github.com/luizgmelo" target="_blank">luizgmelo</a></p>
     </footer>
 
+    <script>
+        function mudarMenu() {
+            if (menu.style.display == "none") {
+                menu.style.display = "block"
+            } else {
+                menu.style.display = "none"
+            }
+        }
+
+    </script>
 </body>
 </html>

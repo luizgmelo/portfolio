@@ -59,29 +59,30 @@ header > span.md-48 {
     cursor: pointer;
 }
 
+header > span.md-48:hover {
+    color: white;
+    transition: 0.5s color;
+}
+
 header > nav {
     display: none;
     position: absolute;
     margin: 10px;
     right: 0;
-    background-color: white;
-    border-radius: 10px;
-    border: 1px solid black;
-    overflow: hidden;
 }
 
 header li {
     text-align: center;
     list-style-type: none;
-    padding: 10px;
-    border: 1px solid black;
-    
+    margin-bottom: 30px;
 }
 
 header a {
-    font-size: 1.2em;
+    background-color: white;
+    border: 1px solid black;
     color: black;
     text-decoration: none;
+    padding: 10px;
 }
 
 header a:hover {
@@ -89,20 +90,17 @@ header a:hover {
     transition: color .4s;
 }
 
-
-
 body {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
     background-attachment: fixed;
     padding: 0px 10px;
 }
 
-
 main {
     background-color: white;
     padding-bottom: 20px;
     min-width: 300px;
-    max-width: 1000px;
+    max-width: 700px;
     margin: 20px auto;
     border-radius: 10px;
 }
@@ -115,11 +113,11 @@ main h1 {
 
 main h2 {
     font-family: var(--fonte-destaque);
-    background-color: lightgray;
     font-size: 2em;
     padding: 5px;
     text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.30);
     text-align: center;
+
 }
 
 .div-main {
@@ -169,19 +167,18 @@ main h2 {
     padding: 10px;
     text-align: justify;
     text-indent: 20px;
+    margin: auto;
 }
-
 
 .contato-logo img {
     width: 150px;
 }
-
+/* Corrigir link pegando na main toda */
 .contato-logo > a {
     display: block;
     text-align: center;
     padding: 5px;
 }
-
 
 .contato-logo > a:hover {
     opacity: 50%;

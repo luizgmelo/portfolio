@@ -182,7 +182,7 @@ main h2 {
 .contato-logo img {
     width: 150px;
 }
-/* Corrigir link pegando na main toda */
+
 .contato-logo > a {
     width: 150px;
 }
@@ -237,7 +237,7 @@ footer {
 }
 
 footer > p {
-    color: white;
+    
     font-size: 1.2em;
     padding: 10px;
     text-shadow: 2px 1px rgba(0, 0, 0, 0.15);

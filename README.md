@@ -5,7 +5,7 @@
 <h1 align="center">Portfólio</h1>
 
 <p align="center">
-Uma portfólio simples.
+Um portfólio simples.
 </p>
 
 <div align="center">

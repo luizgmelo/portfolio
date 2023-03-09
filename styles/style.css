@@ -6,21 +6,13 @@
 
 
 :root {
-    --cor0: #5158FD;
-    --cor1: #4977E3;
-    --cor2: #5CB6FA;
-    --cor3: #49C9E3;
-    --cor4: #51FDEC; 
+    --color0: #5158FD;
+    --color1: #4977E3;
+    --color2: #5CB6FA;
+    --color3: #49C9E3;
+    --color4: #51FDEC; 
 
-    --fonte-titulo: 'Bebas Neue', cursive, sans-serif;
-    --fonte-destaque: 'Staatliches', cursive, sans-serif;
-}
-
-.destaque {
-    font-family: var(--fonte-titulo);
-    font-size: 4em;
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.10);      
-    padding: 10px 10px;
+    --font-title: 'Staatliches', cursive, sans-serif;
 }
 
 * {
@@ -86,12 +78,12 @@ header a {
 }
 
 header a:hover {
-    color: var(--cor3);
+    color: var(--color3);
     transition: color .4s;
 }
 
 body {
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    background-image: linear-gradient(to bottom, var(--color2), var(--color3));
     background-attachment: fixed;
     padding: 0px 10px;
 }
@@ -108,11 +100,11 @@ main {
 main h1 {
     font-size: 3em;
     text-align: center;
-    font-family: var(--fonte-destaque);
+    font-family: var(--font-title);
 }
 
 main h2 {
-    font-family: var(--fonte-destaque);
+    font-family: var(--font-title);
     font-size: 2em;
     padding: 5px;
     text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.30);
@@ -126,7 +118,7 @@ main h2 {
     align-items: center;
 }
 
-.resumo {
+.summary {
     font-family: 'Arial', 'sans-serif';
     font-size: 1.2em;
     margin: 10px;
@@ -138,7 +130,7 @@ main h2 {
     line-height: 1.5em;
 }
 
-.foto-perfil {
+.perfil {
     margin: 20px;
     min-width: 200px;
     min-height: 200px;
@@ -146,11 +138,11 @@ main h2 {
     max-height: 250px;
 }
 
-.tecnologia-logo {
+.knowledge {
     padding: 10px;
 }
 
-.tecnologia-logo img.dev-icon {
+.knowledge img.dev-icon {
     display: block;
     width: 80px;
     height: 80px;
@@ -158,19 +150,19 @@ main h2 {
     margin-bottom: 10px;
 }
 
-.tecnologia-logo img {
+.knowledge img {
     display: block;
     margin: auto;
 }
 
-.tecnologia-logo p {
+.knowledge p {
     padding: 10px;
     text-align: justify;
     text-indent: 20px;
     margin: auto;
 }
 
-.contato-logo {
+.contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,19 +170,19 @@ main h2 {
     margin-bottom: 20px;
 }
 
-.contato-logo img {
+.contacts img {
     width: 150px;
 }
 
-.contato-logo > a {
+.contacts > a {
     width: 150px;
 }
 
-.contato-logo > a:hover {
+.contacts > a:hover {
     opacity: 50%;
 }
 
-.div-projetos {
+.div-project {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -198,22 +190,22 @@ main h2 {
     padding: 0px 20px;
 }
 
-.div-projetos > h3 {
+.div-project > h3 {
     font-size: 1.2em;
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.div-projetos iframe {
+.div-project iframe {
     width: 100%;
     height: 800px;
     border: none;
     border-radius: 10px 10px 0px 0px;
 }
 
-.div-projetos a {
-    background-color: var(--cor0);
+.div-project a {
+    background-color: var(--color0);
     color: white;
     width: 100%;
     height: 30px;
@@ -224,12 +216,12 @@ main h2 {
     transform: translateY(-10px);
 }
 
-.div-projetos a:hover {
-    background-color: var(--cor2);
+.div-project a:hover {
+    background-color: var(--color2);
 }
 
 footer {
-    background-color: var(--cor4);
+    background-color: var(--color4);
     width: calc(100% + 20px);
     text-align: center;
     margin: 0px -10px;
@@ -243,7 +235,7 @@ footer > p {
 }
 
 footer a {
-    background-color: var(--cor0);
+    background-color: var(--color0);
     opacity: 90%;
     padding: 5px;
     color: white;
@@ -251,5 +243,5 @@ footer a {
 }
 
 footer a:hover {
-    background-color: var(--cor2);
+    background-color: var(--color2);
 }

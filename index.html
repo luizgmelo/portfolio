@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/media-query.css" media="screen">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,110 +11,82 @@
     <title>Portifolio | Luiz Guilherme</title>
 </head>
 
-<body onresize="verificarJanela()">  
+<body onresize="checkWindow()">  
   
     <header>
         <h1>L<span class="last-letter">G</span></h1>
-        <span class="material-icons md-48" onclick="mudarMenu()">menu</span>
+        <span class="material-icons md-48" onclick="changeMenu()">menu</span>
         <nav id="menu">
             <ul>
                 <li><a href="#">Start</a></li>
-                <li><a href="#page-sobremim">About me</a></li>
-                <li><a href="#page-tecnologia">Knowledge</a></li>
-                <li><a href="#page-contato">Contacts</a></li>
-                <li><a href="#page-projeto">Projects</a></li>
+                <li><a href="#page-aboutme">About me</a></li>
+                <li><a href="#page-knowledge">Knowledge</a></li>
+                <li><a href="#page-contact">Contacts</a></li>
+                <li><a href="#page-project">Projects</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="div-main conteudo">
-            <img class="foto-perfil" src="./imagens/me.png" alt="foto-minha">
-
+        <div class="div-main">
+            <img class="perfil" src="./images/me.png" alt="my-photo">
             <h1>Hi, my name is Luiz Guilherme</h1>
-            <scroll-page id="page-sobremim">
+            <scroll-page id="page-aboutme">
                 <h2>About me</h2>
             </scroll-page>
-            <p class="resumo">
+            <p class="summary">
                 I have 18 years old, I'm from Brazil and I'm a Front-end Developer,
                 have knowledge, with HTML and CSS and actually studing 
                 <abbr title="Programming language responsible for user interaction">Javascript</abbr>.
                 I'm looking for my first job, why believe that the practice is that build a profissional.
             </p>
         </div>
-
-        <scroll-page id="page-tecnologia">
+        <scroll-page id="page-knowledge">
             <h2>Knowledge</h2>
         </scroll-page>
-
-        <article class="tecnologia-logo">
+        <article class="knowledge">
                 <img class="dev-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html">
-
                 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html"> 
-                <p class="resumo">HTML is a markup language for the creation and structure of web pages, consisting of a series of elements that define for the browser the content and the meaning it has.</p>
-            
+                <p class="summary">HTML is a markup language for the creation and structure of web pages, consisting of a series of elements that define for the browser the content and the meaning it has.</p>
                 <img class="dev-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css">
                 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"  alt="css">
-                <p class="resumo">CSS is a markup language for styling web pages, describing the browser how should show the HTML. It makes it possible that the pages won't be only black and white and adapt to different screen sizes.</p>
+                <p class="summary">CSS is a markup language for styling web pages, describing the browser how should show the HTML. It makes it possible that the pages won't be only black and white and adapt to different screen sizes.</p>
         </article>    
-        
-
-        <div class="div-contato">
-            <scroll-page id="page-contato">
-                <h2>Contacts</h2>
-            </scroll-page>
-            <div class="contato-logo">
-                <a href="https://www.linkedin.com/in/luiz-guilherme-78905323a/" target="_blank" rel="external">
-                    <img src="https://img.shields.io/badge/LINKEDIN-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-                </a> 
-                <a href="https://instagram.com/luizgmelo_" target="_blank" rel="external">
-                    <img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
-                </a> 
-                <a href="https://discord.gg/fAGCKMw4sH" target="_blank" rel="external">
-                    <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
-                </a>  
-                <a href="https://twitter.com/luizgmelo_" target="_blank" rel="external">
-                    <img src="https://img.shields.io/badge/TWITTER-00BFFF?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
-                </a>
-                <a href="https://www.github.com/luizgmelo" target="_blank" rel="external">
-                    <img src="https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-                </a> 
-            </div>
+        <scroll-page id="page-contact">
+            <h2>Contacts</h2>
+        </scroll-page>
+        <div class="contacts">
+            <a href="https://www.linkedin.com/in/luiz-guilherme-78905323a/" target="_blank" rel="external">
+                <img src="https://img.shields.io/badge/LINKEDIN-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+            </a> 
+            <a href="https://instagram.com/luizgmelo_" target="_blank" rel="external">
+                <img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+            </a> 
+            <a href="https://discord.gg/fAGCKMw4sH" target="_blank" rel="external">
+                <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
+            </a>  
+            <a href="https://twitter.com/luizgmelo_" target="_blank" rel="external">
+                <img src="https://img.shields.io/badge/TWITTER-00BFFF?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
+            </a>
+            <a href="https://www.github.com/luizgmelo" target="_blank" rel="external">
+                <img src="https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+            </a> 
         </div>
-
-        <scroll-page id="page-projeto">
+        <scroll-page id="page-project">
             <h2>My Projects</h2>
         </scroll-page> 
-        <div class="div-projetos">
+        <div class="div-project">
             <h3>Calculator</h3>
-            <iframe src="https://luizgmelo.github.io/calculadora/" referrerpolicy="no-referrer">
+            <iframe src="https://luizgmelo.github.io/calculator/" referrerpolicy="no-referrer">
                 Your device does not support this. 
             </iframe>
             <a href="https://luizgmelo.github.io/calculator/" target="_blank">Acess here!</a>
         </div>
     </main>
-
     <footer>
         <p>Developed by <a href="https://www.github.com/luizgmelo" target="_blank">luizgmelo</a></p>
     </footer>
 
-    <script>
-        function mudarMenu() {
-            if (menu.style.display == "none") {
-                menu.style.display = "block"
-            } else {
-                menu.style.display = "none"
-            }
-        }
-
-        function verificarJanela() {
-            if (window.innerWidth >= 768) {
-                menu.style.display = "inline-block"
-            } else {
-                menu.style.display = "none"
-            }
-        }
-
-    </script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

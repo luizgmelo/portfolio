@@ -14,8 +14,9 @@ A simple portfolio.
 
 <br>
 
-![portfolio-desktop](https://user-images.githubusercontent.com/88911920/206763908-0022ef0c-6e4a-4ee3-b8ba-40bf4655c243.gif)
-![portfolio-mobile](https://user-images.githubusercontent.com/88911920/206763811-8f55b341-46be-488b-99bf-03c0e1ecfd5d.gif)
+
+![portfolio-desktop](https://user-images.githubusercontent.com/88911920/231866287-e5b6d425-fc03-4dac-bc17-7a5a0c7b4da1.gif)
+![portfolio-mobile](https://user-images.githubusercontent.com/88911920/231866808-4e2ae0c7-71c7-44b8-9a82-97f4af4e742c.gif)
 
 
 ## What is the project?

@@ -65,11 +65,11 @@ header > nav#menu {
 }
 
 header li {
+    padding: 10px;
     text-align: center;
     list-style-type: none;
     background-color: white;
     border: 1px solid black;
-    padding: 10px;
 }
 
 header a {
@@ -77,9 +77,9 @@ header a {
     text-decoration: none;
 }
 
-header a:hover {
-    color: var(--color3);
-    transition: color .4s;
+header li:hover, header a:hover {
+    background-color: #646464;
+    color: white;
 }
 
 body {

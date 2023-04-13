@@ -172,10 +172,12 @@ main h2 {
 
 .contacts img {
     width: 150px;
+    height: 40px;
 }
 
 .contacts > a {
     width: 150px;
+    height: 40px;
 }
 
 .contacts > a:hover {

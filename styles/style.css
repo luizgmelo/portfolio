@@ -6,244 +6,245 @@
 
 
 :root {
-    --color0: #5158FD;
-    --color1: #4977E3;
-    --color2: #5CB6FA;
-    --color3: #49C9E3;
-    --color4: #51FDEC; 
+  --color0: #5158FD;
+  --color1: #4977E3;
+  --color2: #5CB6FA;
+  --color3: #49C9E3;
+  --color4: #51FDEC; 
 
-    --font-title: 'Staatliches', cursive, sans-serif;
+  --font-title: 'Staatliches', cursive, sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
-    padding: 10px;
+  padding: 10px;
 }
 
 header > h1 {
-    display: inline-block;
-    font-size: 2.5em;
-    padding: 10px;
+  display: inline-block;
+  font-size: 2.5em;
+  padding: 10px;
 }
 
 header > h1::first-letter {
-    background-color: black;
-    color: white;
-    padding: 4px;
+  background-color: black;
+  color: white;
+  padding: 4px;
 }
 
 header > h1 > span.last-letter {
-    background-color: white;
-    color: black;
-    padding: 0px 3px;
+  background-color: white;
+  color: black;
+  padding: 0px 3px;
 }
 
 header > span.md-48 {
-    display: block;
-    float: right;
-    margin-top: 5px;
-    font-size: 50px;    
-    cursor: pointer;
+  display: block;
+  float: right;
+  margin-top: 5px;
+  font-size: 50px;    
+  cursor: pointer;
 }
 
 header > span.md-48:hover {
-    color: white;
-    transition: 0.5s color;
+  color: white;
+  transition: 0.5s color;
 }
 
 header > nav#menu {
-    display: none;
-    position: absolute;
-    margin: 10px;
-    right: 0;
+  display: none;
+  position: absolute;
+  margin: 10px;
+  right: 0;
 }
 
 header li {
-    padding: 10px;
-    text-align: center;
-    list-style-type: none;
-    background-color: white;
-    border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  list-style-type: none;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 header a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 header li:hover, header a:hover {
-    background-color: #646464;
-    color: white;
+  background-color: #646464;
+  color: white;
 }
 
 body {
-    background-image: linear-gradient(to bottom, var(--color2), var(--color3));
-    background-attachment: fixed;
-    padding: 0px 10px;
+  background-image: linear-gradient(to bottom, var(--color2), var(--color3));
+  background-attachment: fixed;
+  padding: 0px 10px;
 }
 
 main {
-    background-color: white;
-    padding-bottom: 20px;
-    min-width: 300px;
-    max-width: 700px;
-    margin: 20px auto;
-    border-radius: 10px;
+  background-color: white;
+  padding-bottom: 20px;
+  min-width: 300px;
+  max-width: 700px;
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
 main h1 {
-    font-size: 3em;
-    text-align: center;
-    font-family: var(--font-title);
+  font-size: 3em;
+  text-align: center;
+  font-family: var(--font-title);
 }
 
 main h2 {
-    font-family: var(--font-title);
-    font-size: 2em;
-    padding: 5px;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.30);
-    text-align: center;
+  font-family: var(--font-title);
+  font-size: 2em;
+  padding: 5px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.30);
+  text-align: center;
 
 }
 
 .div-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .summary {
-    font-family: 'Arial', 'sans-serif';
-    font-size: 1.2em;
-    margin: 10px;
-    min-width: 200px;
-    max-width: 600px;
-    text-align: justify;
-    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
-    text-indent: 30px;
-    line-height: 1.5em;
+  font-family: 'Arial', 'sans-serif';
+  font-size: 1.2em;
+  margin: 10px;
+  min-width: 200px;
+  max-width: 600px;
+  text-align: justify;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
+  text-indent: 30px;
+  line-height: 1.5em;
 }
 
 .perfil {
-    margin: 20px;
-    min-width: 200px;
-    min-height: 200px;
-    max-width: 250px;
-    max-height: 250px;
+  margin: 20px;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 250px;
+  max-height: 250px;
 }
 
 .knowledge {
-    padding: 10px;
+  padding: 10px;
 }
 
 .knowledge img.dev-icon {
-    display: block;
-    width: 80px;
-    height: 80px;
-    margin: auto;
-    margin-bottom: 10px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 .knowledge img {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 
 .knowledge p {
-    padding: 10px;
-    text-align: justify;
-    text-indent: 20px;
-    margin: auto;
+  padding: 10px;
+  text-align: justify;
+  text-indent: 20px;
+  margin: auto;
 }
 
 .contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
 }
 
 .contacts img {
-    width: 150px;
-    height: 40px;
+  width: 150px;
+  height: 40px;
 }
 
 .contacts > a {
-    width: 150px;
-    height: 40px;
+  width: 150px;
+  height: 40px;
 }
 
 .contacts > a:hover {
-    opacity: 50%;
+  opacity: 50%;
 }
 
 .div-project {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
 }
 
 .div-project > h3 {
-    font-size: 1.2em;
-    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
-    margin-top: 10px;
-    margin-bottom: 20px;
+  font-size: 1.2em;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .div-project iframe {
-    width: 100%;
-    height: 800px;
-    border: none;
-    border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 800px;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .div-project a {
-    background-color: var(--color0);
-    color: white;
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 10px;
-    border-radius: 10px;
-    transform: translateY(-10px);
+  background-color: var(--color0);
+  color: white;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+  border-radius: 10px;
+  transform: translateY(-10px);
 }
 
 .div-project a:hover {
-    background-color: var(--color2);
+  background-color: var(--color2);
 }
 
 footer {
-    background-color: var(--color4);
-    width: calc(100% + 20px);
-    text-align: center;
-    margin: 0px -10px;
+  background-color: var(--color4);
+  width: calc(100% + 20px);
+  text-align: center;
+  margin: 0px -10px;
 }
 
 footer > p {
-    
-    font-size: 1.2em;
-    padding: 10px;
-    text-shadow: 2px 1px rgba(0, 0, 0, 0.15);
+  
+  font-size: 1.2em;
+  padding: 10px;
+  text-shadow: 2px 1px rgba(0, 0, 0, 0.15);
 }
 
 footer a {
-    background-color: var(--color0);
-    opacity: 90%;
-    padding: 5px;
-    color: white;
-    text-decoration: none;
+  background-color: var(--color0);
+  opacity: 90%;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
 }
 
 footer a:hover {
-    background-color: var(--color2);
+  background-color: var(--color2);
 }

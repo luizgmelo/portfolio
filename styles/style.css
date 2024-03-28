@@ -22,8 +22,8 @@
   scroll-behavior: smooth;
 }
 
-header {
-  padding: 10px;
+body {
+  margin-top: 100px;
 }
 
 header h1 {
@@ -33,7 +33,7 @@ header h1 {
 }
 
 header h1::first-letter {
-  background-color: black;
+  background-color: var(--color1);
   color: white;
   padding: 4px;
 }
@@ -44,10 +44,52 @@ header h1 > span.last-letter {
   padding: 0px 3px;
 }
 
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navigation-bar .items {
+  display: flex;
+  gap: 40px;
+  margin-right: 30px;
+  font-size: 1.3em;
+  color: white;
+  list-style: none;
+}
+
+.navigation-bar .item {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding-left: 20px;
+} 
+
+.navigation-bar .item::before {
+  content: "";
+  background-color: var(--color1);
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 0; 
+  transform: translate(-50%, -50%);
+
+} 
+
+.navigation-bar .item:hover {
+  color: var(--color3);
+} 
+
 body {
   background-image: linear-gradient(to bottom, var(--color2), var(--color3));
   background-attachment: fixed;
-  padding: 0px 10px;
 }
 
 main {

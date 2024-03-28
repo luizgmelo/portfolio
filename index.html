@@ -13,27 +13,33 @@
 <body>  
  
     <header>
-        <h1>L<span class="last-letter">G</span></h1>
+        <nav class="navigation-bar">
+            <h1>L<span class="last-letter">G</span></h1>
+            <ul class="items">
+                <li><a class="item" href="#page-knowledge">Skills</a></li>
+                <li><a class="item" href="#page-projects">Projects</a></li>
+                <li><a class="item" href="#page-aboutme">About</a></li>
+                <li><a class="item" href="#page-contact">Contacts</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <div class="div-main">
-            <img class="perfil" src="./images/me.png" alt="my-photo">
-            <h1>Hi, my name is Luiz Guilherme</h1>
             <scroll-page id="page-aboutme">
-                <h2>About me</h2>
+                <img class="perfil" src="./images/me.png" alt="my-photo">
             </scroll-page>
+            <h1>Hi, my name is Luiz Guilherme</h1>
+            <h2>About me</h2>
+        <scroll-page id="page-knowledge"> </scroll-page>
             <p class="summary">
-
                 I have 18 years old, I'm from Brazil and I'm a Front-end Developer,
                 have knowledge, with HTML and CSS and actually studing 
                 <abbr title="Programming language responsible for user interaction">Javascript</abbr>.
                 I'm looking for my first job, why believe that the practice is that build a profissional.
             </p>
         </div>
-        <scroll-page id="page-knowledge">
-            <h2>Knowledge</h2>
-        </scroll-page>
+        <h2>Knowledge</h2>
         <article class="knowledge">
                 <img class="dev-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html">
                 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html"> 
@@ -41,16 +47,14 @@
                 <img class="dev-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css">
                 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"  alt="css">
                 <p class="summary">CSS is a markup language for styling web pages, describing the browser how should show the HTML. It makes it possible that the pages won't be only black and white and adapt to different screen sizes.</p>
+                <scroll-page id="page-contact"></scroll-page>
                 <img class="dev-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" />
                 <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="css">
                 <p class="summary">Javascript is a Programming Language responsible for the interactive pages, is the native language for web browse.</p>
                 <button id="test" onclick="sayHello()">test javascript</button>
                 <p id="test-p"></p>
-          
-            </article>    
-        <scroll-page id="page-contact">
-            <h2>Contacts</h2>
-        </scroll-page>
+        </article>    
+        <h2>Contacts</h2>
         <div class="contacts">
             <a href="https://www.linkedin.com/in/luiz-guilherme-78905323a/" target="_blank" rel="external">
                 <img src="https://img.shields.io/badge/LINKEDIN-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
@@ -58,6 +62,7 @@
             <a href="https://instagram.com/luizgmelo_" target="_blank" rel="external">
                 <img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
             </a> 
+            <scroll-page id="page-projects"></scroll-page> 
             <a href="https://discord.gg/fAGCKMw4sH" target="_blank" rel="external">
                 <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
             </a>  
@@ -68,9 +73,7 @@
                 <img src="https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
             </a> 
         </div>
-        <scroll-page id="page-project">
-            <h2>My Projects</h2>
-        </scroll-page> 
+        <h2>My Projects</h2>
         <div class="div-project">
             <h3>Calculator</h3>
             <iframe src="https://luizgmelo.github.io/calculator/" referrerpolicy="no-referrer">

@@ -26,35 +26,22 @@ header {
   padding: 10px;
 }
 
-header > h1 {
+header h1 {
   display: inline-block;
   font-size: 2.5em;
   padding: 10px;
 }
 
-header > h1::first-letter {
+header h1::first-letter {
   background-color: black;
   color: white;
   padding: 4px;
 }
 
-header > h1 > span.last-letter {
+header h1 > span.last-letter {
   background-color: white;
   color: black;
   padding: 0px 3px;
-}
-
-header > span.md-48 {
-  display: block;
-  float: right;
-  margin-top: 5px;
-  font-size: 50px;    
-  cursor: pointer;
-}
-
-header > span.md-48:hover {
-  color: white;
-  transition: 0.5s color;
 }
 
 body {
@@ -70,11 +57,11 @@ main {
   max-width: 700px;
   margin: 20px auto;
   border-radius: 10px;
+  text-align: center;
 }
 
 main h1 {
   font-size: 3em;
-  text-align: center;
   font-family: var(--font-title);
 }
 
@@ -83,8 +70,6 @@ main h2 {
   font-size: 2em;
   padding: 5px;
   text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.30);
-  text-align: center;
-
 }
 
 .div-main {
@@ -93,24 +78,22 @@ main h2 {
   align-items: center;
 }
 
+.perfil {
+  margin: 20px;
+  min-width: 200px;
+  max-width: 250px;
+  min-height: 200px;
+  max-height: 250px;
+}
+
 .summary {
   font-family: 'Arial', 'sans-serif';
   font-size: 1.2em;
   margin: 10px;
   min-width: 200px;
   max-width: 600px;
-  text-align: justify;
   text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
-  text-indent: 30px;
   line-height: 1.5em;
-}
-
-.perfil {
-  margin: 20px;
-  min-width: 200px;
-  min-height: 200px;
-  max-width: 250px;
-  max-height: 250px;
 }
 
 .knowledge {
@@ -123,11 +106,6 @@ main h2 {
   height: 80px;
   margin: auto;
   margin-bottom: 10px;
-}
-
-.knowledge img {
-  display: block;
-  margin: auto;
 }
 
 .knowledge p {
@@ -145,12 +123,7 @@ main h2 {
   margin-bottom: 20px;
 }
 
-.contacts img {
-  width: 150px;
-  height: 40px;
-}
-
-.contacts > a {
+.contacts img, .contacts > a {
   width: 150px;
   height: 40px;
 }
@@ -213,7 +186,6 @@ footer > p {
 
 footer a {
   background-color: var(--color0);
-  opacity: 90%;
   padding: 5px;
   color: white;
   text-decoration: none;

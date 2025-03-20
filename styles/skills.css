@@ -1,0 +1,37 @@
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.skills .dev-icon {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  background-color: var(--color3);
+  border: 3px solid var(--color1);
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .skills {
+    grid-area: skills;
+    align-self: flex-start;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .skills .dev-icon {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--color3);
+    cursor: pointer;
+  }
+
+  .skills .dev-icon:hover {
+    background-color: var(--color1);
+  }
+}

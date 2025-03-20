@@ -1,110 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <title>Portfolio | Luiz Guilherme</title>
-</head>
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="stylesheet" href="styles/imports.css">
+    <link rel="stylesheet" href="styles/navigation-bar.css">
+    <link rel="stylesheet" href="styles/about-me.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <title>Portfolio</title>
+  </head>
 
 <body>  
  
     <header>
-        <nav class="navigation-bar">
-            <h1>L<span class="last-letter">G</span></h1>
-            <ul class="items">
-                <li><a class="item" href="#page-knowledge">Skills</a></li>
-                <li><a class="item" href="#page-projects">Projects</a></li>
-                <li><a class="item" href="#page-aboutme">About</a></li>
-                <li><a class="item" href="#page-contact">Contacts</a></li>
-            </ul>
-        </nav>
+      <nav class="navigation-bar">
+        <h1>Luizgmelo</h1>
+        <span class="material-symbols-outlined menu-hamburger">menu</span>
+        <ul class="items">
+          <li class="item"><a href="#aboutme">Sobre</a></li>
+          <li class="item"><a href="#projects">Projetos</a></li>
+          <li class="item"><a href="#contacts">Contatos</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <div class="div-main">
-            <scroll-page id="page-aboutme">
-                <img class="perfil" src="./images/me.png" alt="my-photo">
-            </scroll-page>
-            <h1>Hi, my name is Luiz Guilherme</h1>
-            <h2>About me</h2>
-        <scroll-page id="page-knowledge"> </scroll-page>
-            <p class="summary">
-                I have 18 years old, I'm from Brazil and I'm a Front-end Developer,
-                have knowledge, with HTML and CSS and actually studing 
-                <abbr title="Programming language responsible for user interaction">Javascript</abbr>.
-                I'm looking for my first job, why believe that the practice is that build a profissional.
+      <!-- Section About Me -->
+      <scroll-page id="aboutme"></scroll-page>
+      <section class="about__me">
+        <img class="photo" src="./images/me.png" alt="photo" />
+        <div class="presentation">
+          <h1 class="welcome">Olá, Bem-vindo</h1>
+          <p>
+            Me chamo <span>Luiz Guilherme</span>, Sou <span>Desenvolvedor FullStack</span>, um entusiasta
+            em desenvolvimento Web com habilidades em <span>Java e Spring Boot</span> para o lado
+            do servidor e <span>HTML, CSS e JavaScript</span> para o lado do cliente. Eu acredito que 
+            contruir projetos e o trabalho em equipe é o que faz a área de Tecnologia ser
+            tão incrível.
+          </p>
+        </div>
+        <div class="skills">
+          <div class="skill">
+            <img
+              class="dev-icon"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"
+            />
+          </div>
+          <div class="skill">
+            <img
+              class="dev-icon"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+            />
+          </div>
+          <div class="skill">
+            <img
+              class="dev-icon"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+            />
+          </div>
+          <div class="skill">
+            <img
+              class="dev-icon"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+              alt="html"
+            />
+          </div>
+          <div class="skill">
+            <img
+              class="dev-icon"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+              alt="css"
+            />
+          </div>
+          <div class="skill">
+            <img
+              class="dev-icon"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="javascript"
+            />
+          </div>
+      </section>
+      <!-- Section Projects -->
+      <section>
+        <scroll-page id="projects"></scroll-page>
+        <h2>Projetos</h2>
+        <div class="projects">
+          <div class="project">
+            <h2>Auth System</h2>
+            <img src="images/authentication.jpg" alt="authentication system" />
+            <p>
+              Este projeto foi feito para compartilhar como funciona 
+              autenticação e autorização.
             </p>
-        </div>
-        <h2>Knowledge</h2>
-        <article class="knowledge">
-                <img class="dev-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html">
-                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html"> 
-                <p class="summary">HTML is a markup language for the creation and structure of web pages, consisting of a series of elements that define for the browser the content and the meaning it has.</p>
-                <img class="dev-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css">
-                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"  alt="css">
-                <p class="summary">CSS is a markup language for styling web pages, describing the browser how should show the HTML. It makes it possible that the pages won't be only black and white and adapt to different screen sizes.</p>
-                <scroll-page id="page-contact"></scroll-page>
-                <img class="dev-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" />
-                <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="css">
-                <p class="summary">Javascript is a Programming Language responsible for the interactive pages, is the native language for web browse.</p>
-                <button id="test" onclick="sayHello()">test javascript</button>
-                <p id="test-p"></p>
-        </article>    
-        <h2>Contacts</h2>
-        <div class="contacts">
-            <a href="https://www.linkedin.com/in/luiz-guilherme-78905323a/" target="_blank" rel="external">
-                <img src="https://img.shields.io/badge/LINKEDIN-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-            </a> 
-            <a href="https://instagram.com/luizgmelo_" target="_blank" rel="external">
-                <img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
-            </a> 
-            <scroll-page id="page-projects"></scroll-page> 
-            <a href="https://discord.gg/fAGCKMw4sH" target="_blank" rel="external">
-                <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
-            </a>  
-            <a href="https://twitter.com/luizgmelo_" target="_blank" rel="external">
-                <img src="https://img.shields.io/badge/TWITTER-00BFFF?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
+            <a
+              class="button"
+              href="https://github.com/luizgmelo/authsystem-springboot"
+              target="_blank"
+            >
+            Acesse aqui 
             </a>
-            <a href="https://www.github.com/luizgmelo" target="_blank" rel="external">
-                <img src="https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-            </a> 
+          </div>
+          <div class="project">
+            <h2>AnimeG API</h2>
+            <img src="images/anime.jpg" alt="anime-api" />
+            <p>
+              Este projeto foi desenvolvido uma api de animes para compartilhar
+              como funciona as operações de criação, leitura, atualização e removação.
+            </p>
+            <a
+              class="button"
+              href="https://github.com/luizgmelo/anime-springboot-api"
+              target="_blank"
+            >
+            Acesse aqui 
+            </a>
+          </div>
+          <div class="project">
+            <h2>StarWars API</h2>
+            <img src="images/star-wars.jpg" alt="authentication system" />
+            <p>
+              Este projeto foi feito uma api de planetas do mundo star wars
+              para compartilhar como funciona testes unitários, integração e end-to-end.
+            </p>
+            <a
+              class="button"
+              href="https://github.com/luizgmelo/starwars-api"
+              target="_blank"
+            >
+             Acesse aqui 
+            </a>
+          </div>
+          <div class="project">
+            <h2>Portfolio</h2>
+            <img src="images/portfolio.jpg" alt="porfolio" />
+            <p>
+              Este projeto foi feito para compatilhar minhas habilidade, projetos e um pouco sobre mim.
+            </p>
+            <a
+              class="button"
+              href="https://github.com/luizgmelo/portfolio"
+              target="_blank"
+            >
+              Acesse aqui
+            </a>
+          </div>
+          <div class="project">
+            <h2>Calculadora</h2>
+            <img src="images/calculator.png" alt="calculadora" />
+            <p>
+              Este foi o meu primeiro projeto uma calculadora comum para desenvolver minhas habilidades.
+            </p>
+            <a
+              class="button"
+              href="https://luizgmelo.github.io/calculator/"
+              target="_blank"
+            >
+              Acesse aqui
+            </a>
+          </div>
+          <div class="project">
+            <h2>Jogo da memória</h2>
+            <img src="images/memory-game.png" alt="jogo da memoria" />
+            <p>
+              Este projeto foi um jogo da memória do meu anime favorito My Hero Academia que 
+              foi bastante desafiador e divertido além do aprendizado.
+            </p>
+            <a
+              class="button"
+              href="https://luizgmelo.github.io/memory-game/"
+              target="_blank"
+            >
+              Acesse aqui
+            </a>
+          </div>
+          <div class="project">
+            <h2>Pokedex</h2>
+            <img src="images/pokedex.png" alt="pokedex" />
+            <p>
+              Este projeto me ensinou a consumir uma API e manipular os seus dados.
+            </p>
+            <a
+              class="button"
+              href="https://luizgmelo.github.io/pokedexjs/"
+              target="_blank"
+            >
+              Acesse aqui
+            </a>
+          </div>
+          <div class="project">
+            <h2>Crunchyroll</h2>
+            <img src="images/crunchyroll.png" alt="crunchyroll" />
+            <p>
+              Este projeto desenvolvi um clone do meu site de anime favoritos
+              melhorei minhas habilidades e me diverti bastante.
+            </p>
+            <a
+              class="button"
+              href="https://luizgmelo.github.io/crunchyroll-clone/"
+              target="_blank"
+            >
+              Acesse aqui
+            </a>
+          </div>
         </div>
-        <h2>My Projects</h2>
-        <div class="div-project">
-            <h3>Calculator</h3>
-            <iframe src="https://luizgmelo.github.io/calculator/" referrerpolicy="no-referrer">
-                Your device does not support this. 
-            </iframe>
-            <a href="https://luizgmelo.github.io/calculator/" target="_blank">Access here!</a>
-        </div>
-        <div class="div-project">
-            <h3>Memory Game</h3>
-            <iframe src="https://luizgmelo.github.io/memory-game/" referrerpolicy="no-referrer">
-                Your device does not support this.
-            </iframe>
-            <a href="https://luizgmelo.github.io/memory-game" target="_blank">Access here!</a>
-        </div>
-        <div class="div-project">
-            <h3>Crunchyroll Clone</h3>
-            <iframe src="https://luizgmelo.github.io/crunchyroll-clone/" referrerpolicy="no-referrer">
-                Your device does not support this.
-            </iframe>
-            <a href="https://luizgmelo.github.io/crunchyroll-clone/" target="_blank">Access here!</a>
-        </div>
-        <div class="div-project">
-            <h3>Pokedex</h3>
-            <iframe src="https://luizgmelo.github.io/pokedexjs/" referrerpolicy="no-referrer">
-                Your device does not support this.
-            </iframe>
-            <a href="https://luizgmelo.github.io/pokedexjs/" target="_blank">Access here!</a>
+      </section>
+      <!-- Section contact -->
+      <section>
+        <scroll-page id="contacts"></scroll-page>
+        <div class="contacts">
+          <div class="contact">
+            <img src="images/gmail.png" alt="gmail-logo" />
+            <a class="button" href="mailto:luizgmelo64@gmail.com"
+              >Me manda um e-mail</a
+            >
+          </div>
+          <div class="contact">
+            <img
+              src="./images/github-mark.png"
+            />
+            <a class="button" href="https://github.com/luizgmelo/"
+              >Veja meu GitHub</a
+            >
+          </div>
+          <div class="contact">
+            <img
+              src="./images/linkedin.png"
+            />
+            <a class="button" href="https://www.linkedin.com/in/luiz-g-melo/"
+              >Veja meu LinkedIn</a
+            >
+          </div>
         </div>
     </main>
     <footer>
-        <p>Developed by <a href="https://www.github.com/luizgmelo" target="_blank">luizgmelo</a></p>
+      <p>Desenvolvido por <span class="name">Luiz Guilherme</span></p>
     </footer>
 
     <script src="./js/script.js"></script>

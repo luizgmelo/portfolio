@@ -1,0 +1,45 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color1);
+  padding: 20px 0px;
+  gap: 10px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact img {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color3);
+  border-radius: 10px;
+}
+
+.contact .button {
+  width: 150px;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #e2c044;
+  color: var(--color4);
+}
+
+.contact .button:hover {
+  background-color: var(--color3);
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+  }
+}

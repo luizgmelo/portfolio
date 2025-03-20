@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color0: #255c99;
+  --color1: #65afff;
+  --color2: #e2c044;
+  --color3: #ede7e3;
+  --color4: #0d1317;
+
+  --font-title: "Red Rose", cursive, sans-serif;
+  --font-text: "Roboto", "sans-serif";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--font-text);
+}
+
+h1 {
+  font-size: 3em;
+  font-family: var(--font-title);
+}
+
+h2 {
+  width: 100%;
+  font-size: 2em;
+  font-family: var(--font-title);
+  padding: 10px 0px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3);
+  background-color: var(--color0);
+  color: var(--color2);
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+button {
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  section > h2 {
+    font-size: 3em;
+  }
+}
